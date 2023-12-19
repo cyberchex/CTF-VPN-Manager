@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VPN Start
+Comment=VPN Start
+Exec="sudo python3 /home/kali/Desktop/CTF-VPN-Manager/start_vpn.py"
+Icon=view-private
+Path=/home/kali/Desktop/CTF-VPN-Manager
+Terminal=true
+StartupNotify=false
