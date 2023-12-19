@@ -9,7 +9,7 @@ This is a home-grown Python project to manage OpenVPN config files needed for co
 
 Pre-req - You have installed OpenVPN already.
 
-1) Clone the Repo - Open up terminal on main Desktop.  Enter this command to clone the repo: TBD
+1) Clone the Repo - Open up terminal on main Desktop.  Enter this command to clone the repo: "git clone https://github.com/cyberchex/CTF-VPN-Manager.git"
 2) Download your config files from each of the CTF sites.
 3) Place each of the CTF config files in apporate sub-directories within Configs folder. (ie THM, THM-West, HTB-Starting-Point, HTB-Lab, PTD, etc)
 4) Rename each of the OpenVPN files to exactly "ctf_config.ovpn" within each of the sub-directories.  DO NOT customize at this time.
