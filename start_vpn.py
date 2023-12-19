@@ -29,7 +29,7 @@ print('K = Kill OpenVPN')
 print('')
 print('Q = Quit')
 
-print('Enter Option (1,2,3,4,5,6,C,K,Q)')
+print('Enter Option (1,2,3,4,5,6,K,Q)')
 
 option = input()
 
