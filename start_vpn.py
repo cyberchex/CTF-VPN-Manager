@@ -1,35 +1,86 @@
 #Python Script - CTF VPN Manager w a Killswitch
 #Written By - CyberChex
-#Date - 12/19/2023
+#Date - 12/23/2023
 
 #Import Linux OS Commands
 import os
 import subprocess
+import csv
 
-#Display Options
-print('')
-print('CyberChex CTF VPN Manager!')
-print('')
-print('************************* Before switching CTF sites, please execute Kill OpenVPN option *****************************')
-print('************************* You might need to keep this terminal open after connecting     *****************************')
-print('')
-print('Select one of the following services:')
-print('1 = Hackthebox Starting Point')
-print('2 = Hackthebox Lab')
-print('3 = Tryhackme')
-print('4 = Tryhackme - West')
-print('5 = PwnTillDawn')
-print('6 = echoCTF')
-print('')
-print('')
-print('Program Options')
-#print('C = Check if VPN Tunnel is Activated') - IN DEV
-#print('')
-print('K = Kill OpenVPN')
-print('')
-print('Q = Quit')
+#Define Function - Current list of CTF Sites Managed
+#def ctf_sites():
+#     with open('Configs/sites.txt') as csv_file:
+#         csv_reader = csv.reader(csv_file, delimiter=',')
+#         line_count = 0
+#         for row in csv_reader:
+#             if line_count == 0:
+#                 print(f'Column names are {", ".join(row)}')
+#                 line_count += 1
+#             else:
+#                 print(f'\t{row[0]} equals {row[1]} CTF Site, and is located in {row[2]}.')
+#                 line_count += 1
+#         print(f'Processed {line_count} lines.')
 
-print('Enter Option (1,2,3,4,5,6,K,Q)')
+
+
+#Debug View
+#Call Function - List of CTF Sites Managed
+#ctf_sites()
+
+#Function - Display New Menu Header Section
+def menu_header():
+     print('')
+     print('CyberChex CTF VPN Manager!')
+     print('')
+     print('************************* Before switching CTF sites, please execute Kill OpenVPN option *****************************')
+     print('************************* You might need to keep this terminal open after connecting     *****************************')
+     print('')
+     print('Select one of the following options:')
+
+#Call Function - Menu Header
+menu_header()
+
+#Function - Display Menu Selections from CTF File
+def menu_selections():
+     with open('Configs/sites.txt') as csv_file:
+         csv_reader = csv.reader(csv_file, delimiter=',')
+         line_count = 0
+         for row in csv_reader:
+             if line_count == 0:
+                 #print(f'Column names are {", ".join(row)}')
+                 line_count += 1
+             else:
+                 print(f'\t{row[0]} = {row[1]} CTF Site')
+                 line_count += 1
+         #print(f'Processed {line_count} lines.')
+
+menu_selections()
+
+#Function - Diplay Current Menu Selections
+def display_menu():
+
+     print('')
+     print('')
+     print('Program Options')
+     #print('T = Check if VPN Tunnel is Activated') - IN DEV
+     #print('')
+     #print('A = Add VPN Site') - IN DEV
+     #print('')
+     #print('R = Remove VPN Site) - IN DEV
+     #print('')
+     #print('C = Config Setup') - IN DEV
+     print('K = Kill OpenVPN')
+     print('')
+     print('Q = Quit')
+
+     print('Enter Option (1,2,3,4,5,6,K,Q)')
+
+display_menu()
+
+#def menu(user_selection):
+#     return option
+
+
 
 option = input()
 
@@ -58,7 +109,15 @@ elif option =='5':
 elif option =='6':
      os.system('sudo openvpn Configs/echoCTF/ctf_config.ovpn')
      print('echoCTF VPN Activated!')
-#elif option =='C' or option == 'c':
+elif option == 'A' or option == 'a':
+     #Allow user to add a new CTF site
+     print('In Dev')
+elif option == 'C' or option == 'c':
+     #Allow user to pick which config file to manage
+     print('In Dev')
+
+
+#elif option =='T' or option == 't':
      #This code will check for active TUN session - IN DEV
 #     import psutil
 #     import logging, os, time
