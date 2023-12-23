@@ -1,0 +1,7 @@
+id,site,location
+1,Hackthebox Starting Point,/HTB-Starting-Point
+2,Hackthebox Lab,/HTB-Lab
+3,Tryhackme East,/THM
+4,Tryhackme West,/THM-West
+5,PwnTillDawn,/PTD
+6,echoCTF,/echoCTF
