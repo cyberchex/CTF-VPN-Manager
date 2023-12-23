@@ -15,3 +15,6 @@ Pre-req - You have installed OpenVPN already.
 4) Rename each of the OpenVPN files to exactly "ctf_config.ovpn" within each of the sub-directories.  DO NOT customize at this time.
 5) Run "python3 start_vpn.py"
 6) NOTE: You might need to keep Terminal Open, just minimize.  Run the script again and select "Kill OpenVPN" when done with the CTF VPN.
+
+Link to YouTube Video the helps with the install.  Enjoy! 
+https://youtube.com/shorts/hXrh6znUS3Q?feature=share
