@@ -17,4 +17,5 @@ Pre-req - You have installed OpenVPN already.
 6) NOTE: You might need to keep Terminal Open, just minimize.  Run the script again and select "Kill OpenVPN" when done with the CTF VPN.
 
 Link to YouTube Video the helps with the install.  Enjoy! 
-https://youtube.com/shorts/hXrh6znUS3Q?feature=share
+2 min - https://youtu.be/ZEi74XySUj8
+1 min - https://youtube.com/shorts/hXrh6znUS3Q?feature=share
